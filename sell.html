@@ -1,0 +1,27 @@
+{% extends 'base1.html' %}
+{% block title %}
+SellPage!
+{% endblock %}
+{% block form %}
+<form method="post" action="/sell">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Owner name</label>
+    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex :- Jeetu">
+  </div><br>
+    <div class="form-group">
+    <label for="exampleInputEmail1">Car Name</label>
+    <input name="car" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Ex :- swift">
+  </div><br>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Phone No.</label>
+    <input name="phone" type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone no.">
+  </div><br>
+    <div class="form-group">
+    <label for="exampleInputPassword1">Image URL</label>
+    <input name="image" type="text" class="form-control" placeholder="Image URL">
+  </div><br>
+  <label>Description</label><br>
+  <textarea cols="50" rows="3" name="des" ></textarea><br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

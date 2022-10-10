@@ -1,0 +1,28 @@
+{% extends 'base1.html' %}
+{% block title %}
+BuyPage!
+{% endblock %}
+{% block table %}
+<table class="table table-dark">
+  <thead>
+    <tr align="center">
+      <th scope="col">CAR</th>
+      <th scope="col">DESCRIPTION</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for item in x %}
+    <tr align="center">
+      <td><h5>{{ item.car }}</h5>
+          <img src="{{ item.image }}" width="300px" height="250px">
+          <h6>Owner :- {{ item.owner }}</h6>
+          <h6>Contact :- {{ item.year }}</h6>
+      </td>
+      <td width="500px">
+        <p><h6>{{ item.description }}</h6></p>
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

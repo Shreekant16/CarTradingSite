@@ -1,0 +1,15 @@
+{% extends 'base1.html' %}
+{% block title %}RemovePage!{% endblock %}
+{% block form %}
+<form method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Owner name</label>
+    <input name="email" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Owner name">
+  </div><br>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Uploaded Image Link</label>
+    <input name="link" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Image Link">
+  </div><br>
+    <button type="submit">REMOVE</button>
+</form>
+{% endblock %}
