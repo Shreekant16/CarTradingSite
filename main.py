@@ -42,7 +42,7 @@ def register():
         email = request.form.get('email')
         password = request.form.get('password')
         phone = request.form.get('phone')
-        car = Car(email=email, phone=phone, password=generate_password_hash(password))
+        car = Car(email=email, phone=phone, password=generate_password_hash(password), method='sha256')
         db.session.add(car)
         db.session.commit()
     return render_template('register.html')
